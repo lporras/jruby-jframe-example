@@ -25,6 +25,12 @@ Run the main application directly with JRuby:
 jruby -S samples/main.rb
 ```
 
+If Jframe does not open you can first run this command:
+```bash
+export JRUBY_OPTS="-J-Dapple.awt.UIElement=false -J-Djava.awt.headless=false"
+jruby -S samples/main.rb
+```
+
 This will create a simple Swing window with a "Say Hello" button that displays a message dialog when clicked.
 
 ## Building an Executable JAR
