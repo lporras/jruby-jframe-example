@@ -8,17 +8,17 @@ class HelloWorld < JFrame
   def initialize
     super "JSwing Example"
 
-    setSize(240, 100)
-    setDefaultCloseOperation(JFrame::EXIT_ON_CLOSE)
-    setLocationRelativeTo(nil)
+    set_size(240, 100)
+    set_default_close_operation(JFrame::EXIT_ON_CLOSE)
+    set_location_relative_to(nil)
 
     button = JButton.new("Say Hello")
     add(button)
 
-    button.addActionListener do |e|
-      JOptionPane.showMessageDialog(nil, "Hello World")
+    button.add_action_listener do |e|
+      JOptionPane.show_message_dialog(nil, "Hello World")
     end
 
-    setVisible(true)
+    set_visible(true)
   end
 end
